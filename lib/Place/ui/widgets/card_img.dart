@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'floating_action_button.dart';
+import '../../../widgets/floating_action_button_green.dart';
 
 class CardImg extends StatelessWidget {
   String pathImg;

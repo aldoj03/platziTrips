@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter__trips/description_place.dart';
-import 'package:flutter__trips/header_appbar.dart';
-import 'package:flutter__trips/review_list.dart';
+import 'package:flutter__trips/Place/ui/widgets/description_place.dart';
+import 'package:flutter__trips/Place/ui/screens/header_appbar.dart';
+import 'package:flutter__trips/Place/ui/widgets/review_list.dart';
 
 class Home extends StatelessWidget {
   @override
