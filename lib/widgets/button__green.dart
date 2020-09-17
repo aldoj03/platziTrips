@@ -27,13 +27,16 @@ class _ButtonGreenState extends State<ButtonGreen> {
         width: widget.width,
         height: widget.height,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(30.0),
+            borderRadius: BorderRadius.circular(16.0),
+            boxShadow: [BoxShadow(color: Colors.black26, offset: Offset(8.0,10.0), blurRadius: 10.0)],
             gradient: LinearGradient(
                 colors: [Color(0xFFa7ff84), Color(0xFF1cbb78)],
                 begin: FractionalOffset(0.2, 0.0),
                 end: FractionalOffset(1.0, 0.6),
                 stops: [0.0, 0.6],
-                tileMode: TileMode.clamp)),
+                tileMode: TileMode.clamp,
+                
+                )),
         child: Center(
             child: Text(
           widget.text,
