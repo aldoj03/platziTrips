@@ -16,6 +16,10 @@ class FirebaseAuthAPI {
     return userCredential.user;
   }
 
+  get firebaseInstance{
+    return this._auth;
+  }
+
   signOut()  {
     this._auth.signOut().then((value) => print('Logout'));
     this.googleSignIn.signOut().then((value) => print('Logout Gmail'));

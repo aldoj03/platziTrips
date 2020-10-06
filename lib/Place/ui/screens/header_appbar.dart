@@ -5,6 +5,6 @@ import '../widgets/car_img_list.dart';
 class HeaderAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Stack(children: [GradientBack('Populares', 300.0), CardListImage()]);
+    return Stack(children: [GradientBack(height: 300.0), CardListImage()]);
   }
 }

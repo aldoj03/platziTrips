@@ -4,10 +4,9 @@ import 'profile_place_info.dart';
 
 class ProfilePlace extends StatelessWidget {
 
-  String image;
   Place place;
 
-  ProfilePlace(this.image, this.place);
+  ProfilePlace(this.place);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class ProfilePlace extends StatelessWidget {
       decoration: BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.cover,
-              image: AssetImage(image)
+              image: NetworkImage(this.place.urlImage)
           ),
           borderRadius: BorderRadius.all(Radius.circular(20.0)),
           color: Colors.red,
@@ -39,7 +38,7 @@ class ProfilePlace extends StatelessWidget {
       alignment: Alignment(0.0, 0.8),
       children: <Widget>[
         photoCard,
-        ProfilePlaceInfo(place)
+        ProfilePlaceInfo(this.place)
       ],
     );
   }

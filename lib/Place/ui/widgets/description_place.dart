@@ -26,7 +26,7 @@ class DescriptionPlace extends StatelessWidget {
                   fontWeight: FontWeight.normal,
                   color: Color(0xFF56575a)),
             ),
-            ButtonPurple('Navigate'),
+            ButtonPurple(buttonText: 'Navigate', onPressed: ()=>{}),
           ],
           crossAxisAlignment: CrossAxisAlignment.start,
         ));
